@@ -1,0 +1,48 @@
+{
+  "match": "UEFA Champions League Final 2023-24",
+  "team_a": {
+    "name": "Real Madrid",
+    "short": "RMA",
+    "kit_color_desc": "white",
+    "box_color_bgr": [255, 200, 120],
+    "players": {
+      "1":  "Courtois",
+      "2":  "Carvajal",
+      "5":  "Bellingham",
+      "6":  "Nacho",
+      "7":  "Vinicius Jr.",
+      "8":  "Kroos",
+      "10": "Modric",
+      "11": "Rodrygo",
+      "14": "Tchouameni",
+      "15": "Valverde",
+      "20": "Fran Garcia",
+      "22": "Rudiger",
+      "23": "Mendy"
+    }
+  },
+  "team_b": {
+    "name": "Borussia Dortmund",
+    "short": "BVB",
+    "kit_color_desc": "yellow-black",
+    "box_color_bgr": [0, 215, 255],
+    "players": {
+      "1":  "Kobel",
+      "4":  "Schlotterbeck",
+      "10": "Sancho",
+      "11": "Reus",
+      "15": "Hummels",
+      "17": "Fullkrug",
+      "19": "Sabitzer",
+      "23": "Emre Can",
+      "24": "Maatsen",
+      "26": "Ryerson",
+      "27": "Adeyemi",
+      "43": "Brandt"
+    }
+  },
+  "referee": {
+    "label": "Referee",
+    "box_color_bgr": [0, 255, 0]
+  }
+}
