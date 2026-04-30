@@ -1,0 +1,31 @@
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+
+# Model weights (large files — download on setup)
+*.pt
+
+# Source videos (large — not tracked)
+full_video.mp4
+source_video.mp4
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Pytest cache
+.pytest_cache/
+
+# Byte-compiled
+*.pyc
