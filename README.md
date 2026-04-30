@@ -84,25 +84,34 @@ pip install -r requirements.txt
 
 ## Usage
 
+> **Important:** Always activate the virtual environment before running any commands:
+> ```bash
+> source .venv/bin/activate
+> ```
+
 ### Process a Video Clip
 
 ```bash
 # Basic usage — process a specific time segment
-python main.py --source full_video.mp4 --output output_annotated.mp4 \
+python main.py --source full_video_720p.mp4 --output output_annotated.mp4 \
     --start_sec 20 --end_sec 32
 
-# Disable team clustering
-python main.py --source full_video.mp4 --output output.mp4 \
+# With team-specific colour-coded boxes and player labels (using roster)
+python main.py --source full_video_720p.mp4 --output output_teams.mp4 \
+    --start_sec 20 --end_sec 32 --roster roster.json
+
+# Disable team clustering entirely
+python main.py --source full_video_720p.mp4 --output output.mp4 \
     --start_sec 20 --end_sec 32 --no-teams
 
 # Process first 100 frames only (for quick testing)
-python main.py --source full_video.mp4 --output test.mp4 --limit 100
+python main.py --source full_video_720p.mp4 --output test.mp4 --limit 100
 ```
 
 ### Capture Sample Screenshots
 
 ```bash
-python screenshot.py --source full_video.mp4 --output_dir screenshots \
+python screenshot.py --source full_video_720p.mp4 --output_dir screenshots \
     --start_sec 20 --end_sec 32 --every 50
 ```
 
